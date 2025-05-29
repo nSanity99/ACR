@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #C5A500; /* oro logo */
+  --dark-color: #1c1c1c;
+  --light-color: #f8f8f8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-header {
+  background: var(--dark-color);
+  padding: 0.5rem 0;
+}
+
+.logo {
+  height: 60px;
+}
+
+.site-title {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover { color: var(--primary-color); }
+
+.main-footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: var(--dark-color);
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+}
+
+.card.narrow {
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  margin: 0.8rem 0;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+button, .btn-primary {
+  background: var(--primary-color);
+  color: var(--dark-color);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button:hover, .btn-primary:hover {
+  opacity: 0.9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+table th, table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background: var(--primary-color);
+  color: var(--dark-color);
+  text-align: left;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.alert.error {
+  background: #ffefef;
+  border: 1px solid #e55;
+  color: #900;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--primary-color);
+  color: var(--dark-color);
+}

@@ -1,0 +1,10 @@
+{
+  "name": "gruppo/vitolo-app",
+  "description": "Simple purchase request management app",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
